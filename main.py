@@ -24,7 +24,7 @@ st.write("Interactive visualizer for a census dataframe")
 st.header("View Data")
 with st.beta_expander("View Dataset"):
     st.table(census_df)
-col1, col2, col3 = st.beta_columns(3):
+col1, col2, col3 = st.beta_columns(3)
 with col1:
     if st.checkbox("Show all Column Names"):
         st.table(census_df.columns)
